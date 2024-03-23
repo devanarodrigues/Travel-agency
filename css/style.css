@@ -1,0 +1,586 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+::selection {
+    background-color: #891652;
+    color: #fff;
+}
+
+:root {
+    --text-dark: #5E1675;
+    --text-light: #7469B6;
+    --extra-light: #b0a9d3;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+ul li {
+    cursor: pointer;
+    list-style: none;
+    transition: .4s linear;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: bold;
+}
+
+nav {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    margin: auto;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    gap: 0 20px;
+}
+
+nav ul li:hover {
+    color: var(--text-light);
+}
+
+nav ul a {
+    background-color: var(--text-dark);
+    color: white;
+    padding: .8rem 1.8rem;
+    border-radius: 1rem;
+    transition: .4s linear;
+}
+
+nav ul a:hover {
+    background-color: var(--text-light);
+}
+
+nav #logo {
+    display: flex;
+    gap: 0 10px;
+    align-items: center;
+}
+
+nav #logo span {
+    font-weight: bold;
+    background-color: var(--text-dark);
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    padding: .8rem 1.2rem;
+}
+
+/* ======================== header ======================== */
+
+header {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: auto;
+}
+
+header #header-group {
+    width: 50%;
+    gap: 0 40px;
+
+
+}
+
+header #header-group h3 {
+    color: var(--text-light);
+    font-size: 1.5em;
+}
+
+header #header-group h1 {
+    color: var(--text-dark);
+    font-size: 3em;
+}
+
+header #header-group label {
+    color: var(--text-dark);
+}
+
+header #header-group .form-group {
+    border-radius: 20px;
+    border: 2px solid var(--text-dark);
+    padding: 8px;
+    width: 14rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0 3rem;
+    margin: 1rem 0;
+}
+
+header #header-group #search {
+    border: none;
+    outline: none;
+}
+
+header #header-group #search:focus-visible {
+    border: none;
+    outline: none;
+}
+
+header #header-group .hashtags {
+    color: var(--text-dark);
+    width: 19rem;
+    margin: 1rem 0;
+}
+
+header #header-group #submit {
+    background-color: var(--text-dark);
+    width: 9rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: bold;
+    height: 2rem;
+    transition: .4s linear;
+    cursor: pointer;
+}
+
+header #header-group #submit:hover {
+    background-color: var(--text-light);
+}
+
+header aside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px 0;
+    margin: 1rem 0;
+}
+
+header aside .buttons span {
+    padding: .5rem 1rem;
+    background-color: var(--extra-light);
+    margin: 0.8rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: .4s linear;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.26);
+}
+
+header aside .buttons span:hover {
+    background-color: var(--text-dark);
+    color: var(--white);
+}
+
+header aside img {
+    border-radius: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.26);
+
+}
+
+/* ======================== story ======================== */
+#story {
+    background-image: url(../img/33-bg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin-top: 8rem;
+    padding-bottom: 40px;
+}
+
+#story #content {
+    margin: auto;
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#story #content img {
+    border-radius: 1rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.26);
+
+}
+
+#story #content h3,
+#story #content .title {
+    color: var(--text-light);
+    margin: 10px 0;
+}
+
+#story #content h2 {
+    color: var(--text-dark);
+    font-size: 2.7rem;
+}
+
+#story #content .description {
+    margin-bottom: 1.5rem;
+}
+
+#story #content a {
+    color: var(--text-dark);
+    text-decoration: underline;
+    margin: 2rem 0;
+}
+
+#story #content article {
+    width: 50%;
+}
+
+/* ======================== pricing ======================== */
+
+#pricing {
+    width: 100%;
+    height: 100%;
+    margin-top: 8rem;
+    padding-bottom: 40px;
+}
+
+#pricing #content {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+#cards-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+#cards-content .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+#cards-content .description-group {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.26);
+    width: 340px;
+    padding: 1rem 5px;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    position: relative;
+    bottom: 1rem;
+}
+
+#cards-content>div>figure>img {
+    border-radius: 1rem 1rem 0 0;
+}
+
+#cards-content .description-group .price {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-light);
+    font-size: .9em;
+}
+
+#cards-content .description-group>span {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#cards-content>div>div>div.location {
+    display: flex;
+    gap: 0 .3rem;
+}
+
+/* ======================== testimonials ======================== */
+#testimonials {
+    background-image: url(../img/33-bg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin-top: 8rem;
+    padding-bottom: 40px;
+}
+
+#testimonials #content {
+    margin: auto;
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#testimonials #content div h3 {
+    color: var(--text-light);
+}
+
+#testimonials #content div h2 {
+    color: var(--text-dark);
+    font-size: 2.7rem;
+}
+
+#testimonials #content #wrap-testimonials {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 5rem 2rem 2rem 2rem;
+}
+
+#testimonials #content #wrap-testimonials .card-testimonials {
+    width: 28%;
+}
+
+#testimonials #content #wrap-testimonials .card-testimonials img {
+    border-radius: 50%;
+}
+
+#testimonials #content #wrap-testimonials .card-testimonials h4 {
+    font-size: 1.1rem;
+    margin: .4rem 0;
+}
+
+#testimonials #content #wrap-testimonials .card-testimonials span i {
+    color: var(--text-light);
+    font-size: 2.1rem;
+}
+
+/* ======================== contact ======================== */
+
+#contact {
+    width: 100%;
+    height: 100%;
+    margin-top: 8rem;
+    padding-bottom: 40px;
+}
+
+#contact #content {
+    margin: auto;
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#contact #content h3 {
+    color: var(--text-light);
+}
+
+#contact #content h2 {
+    color: var(--text-dark);
+    font-size: 2.7rem;
+}
+
+#contact #content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 1rem 0;
+    padding: 2rem 0;
+}
+
+#contact #content form input {
+    border: 3px solid var(--text-dark);
+    outline: none;
+    width: 30rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+}
+
+#contact #content form input:focus {
+    border: 3px solid var(--text-dark);
+    outline: none;
+}
+
+#contact #content form #submit {
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: .4s linear;
+    background-color: var(--text-dark);
+    cursor: pointer;
+}
+
+#contact #content form #submit:hover {
+    background-color: transparent;
+    border: 3px solid var(--text-dark);
+    outline: none;
+    color: var(--text-dark);
+}
+
+/* ======================== footer ======================== */
+footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0 .5rem;
+}
+
+footer #banner {
+    width: 100%;
+    height: 20rem;
+    margin: auto;
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    gap: 2rem 0;
+    margin-bottom: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+footer #banner h2 {
+    font-size: 2.7rem;
+    color: var(--white);
+    font-weight: bold;
+    width: 70%;
+    text-align: center;
+}
+
+footer #banner form input {
+    width: 30rem;
+    height: 3rem;
+    border-radius: 2rem;
+    padding-left: 1rem;
+    border: none;
+    outline: none;
+    transition: .4s linear;
+}
+
+footer #banner form input:focus {
+    border: none;
+    outline: none;
+    border: 2px solid var(--text-dark);
+}
+
+footer #banner form #submit {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 2rem;
+    padding-left: 0rem;
+    border: none;
+    outline: none;
+    background-color: var(--extra-light);
+    font-weight: bold;
+    transition: .4s linear;
+    cursor: pointer;
+}
+
+footer #banner form #submit:hover {
+    border: none;
+    outline: none;
+    background-color: var(--text-dark);
+    color: white;
+}
+
+/* ======================== footer info ======================== */
+
+footer #info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    padding-bottom: 3rem;
+    font-weight: bold;
+}
+
+footer #info #about {
+    width: 38%;
+    color: var(--text-dark);
+}
+footer #info #about h3{
+    margin-bottom: .7rem;
+    color: black;
+    
+}
+
+footer #info #travel,
+footer #info #info-list {
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: .7rem 0;
+}
+
+footer #info #travel h4,
+footer #info #info-list h4 {
+    font-size: 1.3rem;
+    color: black;
+}
+
+footer #info #travel ul,
+footer #info #info-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem 0;
+    transition: .4s linear;
+    color: var(--text-dark);
+    flex-wrap: wrap;
+
+}
+footer #info #travel ul li:hover,
+footer #info #info-list ul li:hover {
+    color: var(--text-light);
+}
+
+#copy{
+    width: 76vw;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--text-dark);
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+#copy span i{
+    font-size: 1.4rem;
+    margin: 0 .3rem;
+    transition: .4s linear;
+    cursor: pointer;
+}
+#copy span i:hover{
+    color: var(--text-light);
+}
